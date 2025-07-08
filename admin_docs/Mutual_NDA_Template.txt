@@ -1,0 +1,31 @@
+MUTUAL NON-DISCLOSURE AGREEMENT (NDA)
+
+This Mutual Non-Disclosure Agreement ("Agreement") is entered into by and between:
+
+Disclosing Party: [Your Name or Company Name]
+Receiving Party: [Developer/Employee Name]
+
+1. Purpose:
+The parties wish to explore a potential business relationship and in connection with this relationship, may disclose confidential information to each other.
+
+2. Definition of Confidential Information:
+"Confidential Information" means any data, design, business plan, strategy, source code, documentation, login credentials, audio files, or any proprietary platform-related information shared.
+
+3. Obligations:
+The Receiving Party agrees:
+a) Not to disclose Confidential Information to any third party.
+b) Not to copy, reverse engineer, or commercialize the platform in any form.
+c) To protect Confidential Information with the same care it uses for its own confidential materials.
+
+4. Duration:
+This Agreement shall remain in effect for 3 years from the date of disclosure of the Confidential Information.
+
+5. Ownership:
+All rights to intellectual property, codebase, and materials remain solely with the Disclosing Party.
+
+6. Breach:
+In case of breach, the Receiving Party agrees to compensate all damages and legal fees incurred by the Disclosing Party.
+
+Signed:
+Disclosing Party: ____________________  Date: ___________
+Receiving Party: ____________________  Date: ___________

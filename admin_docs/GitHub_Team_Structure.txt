@@ -1,0 +1,30 @@
+GITHUB TEAM STRUCTURE PLAN FOR SECURITY
+
+🔐 Access Levels:
+
+1. OWNER (You)
+- Full access to everything: settings, secrets, deploy keys
+- Only you should have this role
+
+2. MAINTAINER (1 DevOps or Lead Developer only)
+- Access to pull requests, CI/CD, and secrets (read-only)
+- Cannot transfer ownership or delete repo
+
+3. CONTRIBUTOR (Developers)
+- Can only push to branches and make pull requests
+- No access to GitHub Actions secrets or production deployment keys
+
+4. VIEWER (Interns, testers)
+- Read-only access to code, cannot push or fork
+- Used for monitoring or reviewing only
+
+🛡️ Security Rules:
+- Set branch protection: main/master must pass checks before merge
+- Disable force pushes
+- Enable 2FA for all team members
+- Use CODEOWNERS file for reviewing critical folders like `/backend/settings/`, `/frontend/api/`, etc.
+
+✅ Tips:
+- Keep the repo PRIVATE
+- Use GitHub Secrets for `.env` values — never hardcode them
+- Rotate team access every 90 days

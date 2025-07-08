@@ -1,0 +1,1 @@
+export default function SpellingGroups() { return <div className='p-6'>✍️ Spelling Groups Page</div>; }

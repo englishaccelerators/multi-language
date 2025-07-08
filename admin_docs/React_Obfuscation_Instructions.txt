@@ -1,0 +1,41 @@
+REACT FRONTEND OBFUSCATION GUIDE (Vite + React)
+
+🎯 Goal:
+Protect your JavaScript build output so no one can easily copy or reverse engineer your frontend logic.
+
+✅ Step-by-Step Using vite-plugin-obfuscator:
+
+1. Install the plugin:
+
+npm install --save-dev vite-plugin-obfuscator
+
+2. Modify your vite.config.js:
+
+import { defineConfig } from 'vite';
+import react from '@vitejs/plugin-react';
+import obfuscator from 'vite-plugin-obfuscator';
+
+export default defineConfig({
+  plugins: [
+    react(),
+    obfuscator({
+      compact: true,
+      controlFlowFlattening: true,
+      deadCodeInjection: true,
+      debugProtection: true,
+      identifierNamesGenerator: 'hexadecimal'
+    })
+  ]
+});
+
+3. Build your frontend:
+
+npm run build
+
+4. Deploy the contents of the `/dist` folder to Vercel
+
+🔐 Notes:
+- This increases security but may slightly affect build size or debugging
+- You can adjust the obfuscation settings to balance performance vs. protection
+
+🚫 Don’t obfuscate in development — only in production build!

@@ -1,0 +1,1 @@
+export default function RhythmGroups() { return <div className='p-6'>🎶 Rhythm Practice</div>; }

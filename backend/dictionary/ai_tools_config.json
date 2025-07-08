@@ -1,0 +1,14 @@
+{
+  "askgpt_enabled": true,
+  "elevenlabs_enabled": false,
+  "whisper_enabled": false,
+  "fallback_enabled": true,
+  "teacher_module_enabled": true,
+  "chat_module_enabled": true,
+  "live_classroom_enabled": true,
+  "quiz_module_enabled": true,
+  "mobile_module_enabled": true,
+  "stripe_enabled": true,
+  "speech_recognition_enabled": true,
+  "analytics_enabled": true
+}

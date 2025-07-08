@@ -1,0 +1,12 @@
+
+[Frontend (React)] --uses--> [Feature Toggles UI, Audio, AI APIs]
+                          |
+                          v
+[Backend (Django)] --controls--> [Toggles, Stripe, Quiz Engine, AI Integration]
+                          |
+                          v
+[PostgreSQL DB] <--> [Word data, user scores, streaks, toggles]
+
+[Admin Panel] => Controls EVERYTHING (on/off, coupons, content, exports, GPT)
+
+[Optional: Mobile App] connects to same Django API

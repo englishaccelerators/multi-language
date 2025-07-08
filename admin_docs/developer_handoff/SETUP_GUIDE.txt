@@ -1,0 +1,23 @@
+
+# ✅ Quick Start
+
+1. Install dependencies:
+   - Backend: `pip install -r requirements.txt`
+   - Frontend: `npm install`
+   - Mobile (optional): `npm install`
+
+2. Environment:
+   - Setup `.env` using `ENV_Setup.txt`
+   - Add OpenAI, Stripe, AWS S3 keys
+
+3. Run the platform:
+   - Backend: `python manage.py runserver`
+   - Frontend: `npm run dev`
+
+4. Use Admin Dashboard to test toggles and modules
+
+5. Deploy:
+   - Backend: `railway up`
+   - Frontend: `vercel --prod`
+
+All deployment scripts are in root.

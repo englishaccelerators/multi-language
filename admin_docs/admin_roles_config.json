@@ -1,0 +1,9 @@
+
+{
+  "roles": {
+    "super_admin": ["toggle_features", "billing_control", "user_ban", "delete_data"],
+    "admin": ["assign_quiz", "edit_words", "manage_sections"],
+    "editor": ["edit_content", "create_quiz"],
+    "viewer": ["view_reports", "preview_quizzes"]
+  }
+}

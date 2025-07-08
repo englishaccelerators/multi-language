@@ -1,0 +1,1 @@
+export default function GrammarQuiz() { return <div className='p-6'>🧠 Grammar Quiz</div>; }

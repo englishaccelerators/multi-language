@@ -1,0 +1,1 @@
+export default function GrammarTopics() { return <div className='p-6'>📘 Grammar Topics</div>; }

@@ -1,0 +1,1 @@
+export default function MCQQuiz() { return <div className='p-6'>✅ Multiple Choice Quiz</div>; }

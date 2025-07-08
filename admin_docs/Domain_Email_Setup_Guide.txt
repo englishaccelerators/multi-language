@@ -1,0 +1,27 @@
+DOMAIN & EMAIL SETUP GUIDE
+
+Step 1: Register Your Domain
+- Register a domain like englishvocabdictionary.com using GoDaddy, Namecheap, or Hostinger.
+
+Step 2: Set Up Email Hosting
+Option A: Google Workspace
+- Go to https://workspace.google.com/
+- Create a custom email (e.g., info@englishvocabdictionary.com)
+- Verify your domain (add TXT DNS record)
+- Add MX records provided by Google
+
+Option B: Zoho Mail (Free for custom domain)
+- Go to https://zoho.com/mail
+- Sign up for Zoho Mail Free Plan
+- Set MX, SPF, and DKIM records as instructed
+
+Step 3: DNS Configuration
+- Use your domain registrar DNS manager
+- Add these:
+  - MX: Zoho or Gmail mail servers
+  - SPF: v=spf1 include:zoho.com ~all (or Google)
+  - DKIM: As provided by your email provider
+
+Step 4: Test Delivery
+- Send a test email to ensure no spam flag
+- Optional: Use mail-tester.com for delivery score

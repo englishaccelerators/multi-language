@@ -1,0 +1,21 @@
+
+# 🚀 Deployment Overview
+
+## Vercel (Frontend)
+- Connected to `frontend/`
+- Run: `vercel --prod`
+- Uses `vercel.json` for config
+
+## Railway (Backend)
+- Linked via CLI to `backend/`
+- Run: `railway up`
+- Connects to PostgreSQL (auto or manual)
+
+## AWS S3 (Audio)
+- Files stored in S3 under `newfileaudio/`
+- Access through `audio_cdn.py` or `get_audio_url()`
+
+## Stripe Integration
+- Pricing and webhook logic in `backend/stripe_checkout/`
+- Toggle per region is set in `region_pricing.py`
+- Webhook logs optionally viewable via admin

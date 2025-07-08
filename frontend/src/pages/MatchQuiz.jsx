@@ -1,0 +1,1 @@
+export default function MatchQuiz() { return <div className='p-6'>🔗 Match Quiz</div>; }
