@@ -38,7 +38,7 @@ import FinalExam from './pages/FinalExam';
 import QuizReviewPage from './pages/QuizReviewPage';
 import MatchQuiz from './pages/MatchQuiz';
 import MCQQuiz from './pages/MCQQuiz';
-import DictationQuiz from './pages/DictationQuizFixed';
+import DictationQuiz from './pages/DictationQuiz';
 import GrammarQuiz from './pages/GrammarQuiz';
 
 // ✅ Other
