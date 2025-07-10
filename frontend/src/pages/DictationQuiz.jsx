@@ -1,4 +1,5 @@
-import React, { useState } from 'react';
+// ✅ DictationQuiz.jsx — Smart Sentence + Word Dictation
+import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 
 const EXAMPLE = {
