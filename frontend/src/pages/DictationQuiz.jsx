@@ -1,4 +1,3 @@
-
 // ✅ DictationQuiz.jsx — Smart Sentence + Word Dictation
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
@@ -11,25 +10,33 @@ const EXAMPLE = {
   identifiercode: "walk-v-1-D-E-1"
 };
 
-export default function DictationQuiz() {
-  const [input, setInput] = useState("");
+function DictationQuiz() {
+  const [input, setInput] = useState('');
   const [status, setStatus] = useState(null);
 
   const playAudio = async (url) => {
-    const audio = new Audio(url);
-    await audio.play();
+    try {
+      const audio = new Audio(url);
+      await audio.play();
+    } catch (error) {
+      console.error('Audio failed to play:', error);
+    }
   };
 
   const handleSubmit = async () => {
-    const correct = input.trim().toLowerCase() === EXAMPLE.sentence.toLowerCase();
-    setStatus(correct ? "✅ Correct!" : "❌ Incorrect.");
+    const isCorrect = input.trim().toLowerCase() === EXAMPLE.sentence.toLowerCase();
+    setStatus(isCorrect ? '✅ Correct!' : '❌ Incorrect.');
 
-    await axios.post("/interactive/tools/log-usage/", {
-      tool: "DICTATION_SENTENCE",
-      section: "vocabulary",
-      completed: true,
-      score: correct ? 1 : 0
-    });
+    try {
+      await axios.post('/interactive/tools/log-usage/', {
+        tool: 'DICTATION_SENTENCE',
+        section: 'vocabulary',
+        completed: true,
+        score: isCorrect ? 1 : 0
+      });
+    } catch (error) {
+      console.error('Failed to submit log usage:', error);
+    }
   };
 
   return (
@@ -44,7 +51,7 @@ export default function DictationQuiz() {
       <input
         type="text"
         value={input}
-        onChange={e => setInput(e.target.value)}
+        onChange={(e) => setInput(e.target.value)}
         placeholder="Type what you heard..."
         className="w-full border p-2 rounded"
       />
@@ -55,3 +62,5 @@ export default function DictationQuiz() {
     </div>
   );
 }
+
+export default DictationQuiz;
