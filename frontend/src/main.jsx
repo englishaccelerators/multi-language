@@ -1,4 +1,5 @@
-// ✅ main.jsx — FINAL UPDATED
+// ✅ main.jsx — FINAL UPDATED 
+import DataEntry from './pages/admin/tools/DataEntry';
 import TopBar from './components/TopBar';
 import React from 'react';
 import ReactDOM from 'react-dom/client';
@@ -101,6 +102,7 @@ root.render(
           <Route path="/admin/top-certificates" element={<ProtectedRoute role="admin"><AdminTopCertificates /></ProtectedRoute>} />
           <Route path="/admin/tools" element={<ProtectedRoute role="admin"><AdminToolManager /></ProtectedRoute>} />
           <Route path="/admin/mistake-review" element={<ProtectedRoute role="admin"><AdminMistakeReview /></ProtectedRoute>} />
+          <Route path="/admin/tools/data-entry" element={<ProtectedRoute role="admin"><DataEntry /></ProtectedRoute>} /> {/* ✅ Added */}
 
           {/* ✅ Quiz Variants (shared) */}
           <Route path="/quiz/match" element={<MatchQuiz />} />
