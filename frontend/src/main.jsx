@@ -24,7 +24,7 @@ import AdminMistakeAnalytics from './pages/AdminMistakeAnalytics';
 import AdminTopCertificates from './pages/AdminTopCertificates';
 import AdminToolManager from './pages/admin/AdminToolManager';
 import AdminMistakeReview from './pages/admin/AdminMistakeReview';
-import DataEntry from './pages/admin/tools/DataEntry';
+import DataEntry from './pages/admin/tools/DataEntry'; // ✅ CORRECT capital-case import
 
 import TeacherDashboard from './pages/TeacherDashboard';
 import TeacherAssignQuiz from './pages/TeacherAssignQuiz';
