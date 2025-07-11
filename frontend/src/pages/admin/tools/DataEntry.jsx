@@ -4,6 +4,7 @@ import React, { useState } from 'react';
 import { Input } from '@/components/ui/input';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
+import DataEntry from './pages/admin/tools/DataEntry';
 
 export default function DataEntry() {
   const [language, setLanguage] = useState('English');
