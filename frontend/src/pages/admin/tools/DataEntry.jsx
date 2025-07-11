@@ -4,6 +4,7 @@ import React, { useState } from 'react';
 import { Input } from '@/components/ui/input';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
+
 export default function DataEntry() {
   const [language, setLanguage] = useState('English');
   const [identifierPrefix, setIdentifierPrefix] = useState('');
@@ -18,6 +19,7 @@ export default function DataEntry() {
     const block = [];
     block.push({ code: `${identifierPrefix}-v-1`, value: word });
     block.push({ code: `${identifierPrefix}-v-1-D`, value: definition });
+
     examples.forEach((ex, i) => {
       if (ex.trim()) {
         block.push({ code: `${identifierPrefix}-v-1-D-E-${i + 1}`, value: ex });
@@ -33,6 +35,7 @@ export default function DataEntry() {
         }
       }
     });
+
     setOutput(block);
   };
 
