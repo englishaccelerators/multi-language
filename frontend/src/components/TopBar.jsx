@@ -2,7 +2,7 @@
 // import { logoutUser } from '@/auth/useAuth';
 
 export default function TopBar() {
-//   const { user } = useAuthContext();
+  // const { user } = useAuthContext();
 
   return (
     <div style={{
@@ -16,6 +16,15 @@ export default function TopBar() {
     }}>
       <h3>📘 English Dictionary</h3>
 
+      <div>
+        {/* ✅ Test Link for Vercel to Find DataEntry Page */}
+        <a href="/admin/tools/data-entry" style={{ color: 'yellow', marginRight: '20px' }}>
+          🔧 Data Entry
+        </a>
+      </div>
+
+      {/* Optional auth logic can be re-enabled later */}
+      {/* 
       {user ? (
         <div>
           Welcome, <strong>{user.username}</strong> ({user.role}){' '}
@@ -24,7 +33,7 @@ export default function TopBar() {
           </a>
           <button
             style={{ padding: '4px 10px', background: '#444', color: 'white', border: 'none' }}
-//             onClick={logoutUser}
+            onClick={logoutUser}
           >
             Logout
           </button>
@@ -34,7 +43,8 @@ export default function TopBar() {
           <a href="/login" style={{ color: '#ccc', marginRight: '10px' }}>Login</a>
           <a href="/register" style={{ color: '#ccc' }}>Register</a>
         </div>
-      )}
+      )} 
+      */}
     </div>
   );
 }
